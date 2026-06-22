@@ -21,4 +21,3 @@ test("login to naukari", async ({page}) =>{
     console.log("successfully executed");
 });
 
- 
