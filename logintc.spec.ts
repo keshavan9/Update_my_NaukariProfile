@@ -17,10 +17,8 @@ test("login to naukari", async ({page}) =>{
     await lp.userProfile();
     await page.waitForTimeout(4000);
     await lp.clickoneditLink();
-    // await page.waitForTimeout(8000);
     await lp.clickonSaveButton();
-    // await page.waitForLoadState('networkidle');
-    // await lp.finalmessage();
+    console.log("successfully executed");
 });
 
  
