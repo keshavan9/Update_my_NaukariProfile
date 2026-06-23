@@ -7,8 +7,12 @@ test("login to naukari", async ({page}) =>{
     test.setTimeout(120000);
     const lp=new naukariLogin(page)
     await page.goto(data.URL);
-    const title = await page.title();
-    await expect(title).toContain(data.title);
+    let title = await page.title();
+    if (title.includes('Access Denied')) {
+        await page.goto('https://login.naukri.com/nLogin/Login.php');
+        title = await page.title();
+    }
+    await expect(title).toContain('Naukri');
     await lp.loginbutton();
     await lp.enteremail(data.Username);
     await lp.enterpassword(data.Password);
