@@ -1,7 +1,6 @@
 {
-
-    "URL": "https://www.naukri.com/",
-    "Username":"venkeshav@gmail.com",
-    "Password": "Password@123",
-    "title":"Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com"
+  "URL": "https://www.naukri.com/",
+  "Username": "your-email@example.com",
+  "Password": "your-password",
+  "title": "Jobs - Recruitment - Job Search - Employment - Job Vacancies - Naukri.com"
 }
